@@ -4,10 +4,10 @@ import (
 	"github.com/qor/activity"
 	"github.com/qor/help"
 	"github.com/qor/media_library"
-	"github.com/qor/qor-example/app/models"
-	"github.com/qor/qor-example/config/admin"
-	"github.com/qor/qor-example/config/seo"
-	"github.com/qor/qor-example/db"
+	"github.com/sunwukonga/qor-scbn/app/models"
+	"github.com/sunwukonga/qor-scbn/config/admin"
+	"github.com/sunwukonga/qor-scbn/config/seo"
+	"github.com/sunwukonga/qor-scbn/db"
 	"github.com/qor/transition"
 )
 

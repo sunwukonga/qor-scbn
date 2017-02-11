@@ -12,7 +12,7 @@ import (
 	"enterprise.getqor.com/promotion"
 	"github.com/fatih/color"
 	"github.com/qor/media_library"
-	"github.com/qor/qor-example/config/admin"
+	"github.com/sunwukonga/qor-scbn/config/admin"
 )
 
 /* How to run this script

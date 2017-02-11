@@ -2,8 +2,8 @@ package api
 
 import (
 	"github.com/qor/qor"
-	"github.com/qor/qor-example/app/models"
-	"github.com/qor/qor-example/db"
+	"github.com/sunwukonga/qor-scbn/app/models"
+	"github.com/sunwukonga/qor-scbn/db"
 	"github.com/qor/admin"
 )
 

@@ -7,11 +7,11 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 	"github.com/qor/i18n/inline_edit"
-	"github.com/qor/qor-example/app/models"
-	"github.com/qor/qor-example/config/admin"
-	"github.com/qor/qor-example/config/auth"
-	"github.com/qor/qor-example/config/i18n"
-	"github.com/qor/qor-example/db"
+	"github.com/sunwukonga/qor-scbn/app/models"
+	"github.com/sunwukonga/qor-scbn/config/admin"
+	"github.com/sunwukonga/qor-scbn/config/auth"
+	"github.com/sunwukonga/qor-scbn/config/i18n"
+	"github.com/sunwukonga/qor-scbn/db"
 )
 
 func SwitchLocale(ctx *gin.Context) {

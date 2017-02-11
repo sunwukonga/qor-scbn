@@ -2,8 +2,8 @@ package admin
 
 import (
 	"github.com/qor/filebox"
-	"github.com/qor/qor-example/config"
-	"github.com/qor/qor-example/config/auth"
+	"github.com/sunwukonga/qor-scbn/config"
+	"github.com/sunwukonga/qor-scbn/config/auth"
 	"github.com/qor/roles"
 )
 
