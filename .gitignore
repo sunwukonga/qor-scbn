@@ -24,6 +24,7 @@ _testmain.go
 *.prof
 runner-build
 qor-example
+main
 
 config/database*yml
 public/system
