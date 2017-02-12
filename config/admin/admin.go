@@ -24,24 +24,24 @@ import (
 	"github.com/qor/notification/channels/database"
 	"github.com/qor/publish2"
 	"github.com/qor/qor"
+	"github.com/qor/qor/resource"
+	"github.com/qor/qor/utils"
+	"github.com/qor/transition"
+	"github.com/qor/validations"
 	"github.com/sunwukonga/qor-scbn/app/models"
 	"github.com/sunwukonga/qor-scbn/config/admin/bindatafs"
 	"github.com/sunwukonga/qor-scbn/config/auth"
 	"github.com/sunwukonga/qor-scbn/config/i18n"
 	"github.com/sunwukonga/qor-scbn/db"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
-	"github.com/qor/transition"
-	"github.com/qor/validations"
 )
 
 var Admin *admin.Admin
 var ActionBar *action_bar.ActionBar
-var Countries = []string{"China", "Japan", "USA"}
+var Countries = []string{"Singapore", "Philippines", "Indonesia", "Malaysia"}
 
 func init() {
 	Admin = admin.New(&qor.Config{DB: db.DB.Set(publish2.VisibleMode, publish2.ModeOff).Set(publish2.ScheduleMode, publish2.ModeOff)})
-	Admin.SetSiteName("Qor DEMO")
+	Admin.SetSiteName("SC Beauty Network")
 	Admin.SetAuth(auth.AdminAuth{})
 	Admin.SetAssetFS(bindatafs.AssetFS)
 
