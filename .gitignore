@@ -25,6 +25,8 @@ _testmain.go
 runner-build
 qor-example
 main
+main1
+main2
 
 config/database*yml
 public/system

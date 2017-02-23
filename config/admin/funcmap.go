@@ -10,6 +10,10 @@ func initFuncMap() {
 	Admin.RegisterFuncMap("render_latest_order", renderLatestOrder)
 }
 
+func initResellerFuncMap() {
+	ResellerAdmin.RegisterFuncMap("render_latest_order", renderLatestOrder)
+}
+
 func renderLatestOrder(context *admin.Context) template.HTML {
 	var orderContext = context.NewResourceContext("Order")
 	orderContext.Searcher.Pagination.PerPage = 5

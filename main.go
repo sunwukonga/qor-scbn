@@ -6,19 +6,20 @@ import (
 	"strings"
 
 	"github.com/gorilla/csrf"
+	"github.com/qor/qor/utils"
 	"github.com/sunwukonga/qor-scbn/config"
 	"github.com/sunwukonga/qor-scbn/config/admin"
 	"github.com/sunwukonga/qor-scbn/config/api"
 	_ "github.com/sunwukonga/qor-scbn/config/i18n"
 	"github.com/sunwukonga/qor-scbn/config/routes"
 	_ "github.com/sunwukonga/qor-scbn/db/migrations"
-	"github.com/qor/qor/utils"
 )
 
 func main() {
 	mux := http.NewServeMux()
 	mux.Handle("/", routes.Router())
 	admin.Admin.MountTo("/admin", mux)
+	admin.ResellerAdmin.MountTo("/reseller_panel", mux)
 	admin.Widgets.WidgetSettingResource.IndexAttrs("Name")
 
 	api.API.MountTo("/api", mux)
