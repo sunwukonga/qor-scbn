@@ -368,7 +368,7 @@ func init() {
 	activity.Register(order)
 
 	// Define another resource for same model
-	abandonedOrder := Admin.AddResource(&models.Order{}, &admin.Config{Name: "Abandoned Order", Menu: []string{"Order Management"}})
+	abandonedOrder := ResellerAdmin.AddResource(&models.Order{}, &admin.Config{Name: "Abandoned Order", Menu: []string{"Order Management"}})
 	abandonedOrder.Meta(&admin.Meta{Name: "ShippingAddress", Type: "single_edit"})
 	abandonedOrder.Meta(&admin.Meta{Name: "BillingAddress", Type: "single_edit"})
 
